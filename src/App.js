@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./App.css";
-import NasaImage from "./Image";
+import NasaImage from "./Details";
+import Apod from "./APOD";
 
 
 function App() {
@@ -18,12 +19,18 @@ useEffect(() => {
   .catch(err => apiError("Opps Sorry, We'll be back soon!!"));
 }, [])
 
-console.log()
+useEffect(() => {
+  console.log("AAANNNDDDD WE'RE LIVEEEEE");
+}, [])
+
 
   return (
     <div className="App">
       { data && <NasaImage photo = {data} />}
-      <button></button>
+      <div className="bottom-container">
+        <h2>Previous APOD's</h2>
+        <Apod></Apod>
+      </div>
     </div>
     
   );

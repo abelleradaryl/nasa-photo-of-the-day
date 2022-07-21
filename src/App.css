@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.dataContainer {
+  display: flex;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 50%;
+  object-fit: cover;
+  align-items: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
