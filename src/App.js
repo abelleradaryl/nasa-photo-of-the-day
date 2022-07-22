@@ -16,7 +16,7 @@ useEffect(() => {
     console.log(resp);
     setData(resp.data)
   })
-  .catch(err => apiError("Opps Sorry, We'll be back soon!!"));
+  .catch(err => setApiError("Oops Sorry, We'll be back soon!!"));
 }, [])
 
 useEffect(() => {
@@ -27,6 +27,7 @@ useEffect(() => {
   return (
     <div className="App">
       { data && <NasaImage photo = {data} />}
+      { apiError && <h2 className="error">{apiError}</h2>}
       <div className="bottom-container">
         <h2>Previous APOD's</h2>
         <Apod></Apod>
