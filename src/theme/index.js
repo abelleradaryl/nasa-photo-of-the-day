@@ -1,7 +1,7 @@
 // theme
 
 export default {
-    primaryColor: "turquoise",
+    primaryColor: "cyan",
     secondaryColor: "gray",
     tertiaryColor: "lemonchiffon",
     black: "black",

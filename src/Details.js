@@ -13,6 +13,7 @@ const kf = keyframes`
 `
 const StyledDetails = styled.div`
     width: 75%;
+    height: 75vh;
     padding: 8px;
     margin: 5px;
     border-borrom: 2px solid white;
@@ -24,7 +25,7 @@ const StyledDetails = styled.div`
     background-color: ${pr => pr.theme.primaryColor};
     color: ${pr => pr.theme.secondaryColor};
 
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
     &:hover {
       background-color: ${pr => pr.theme.secondaryColor};
       color: ${pr => pr.theme.primaryColor};

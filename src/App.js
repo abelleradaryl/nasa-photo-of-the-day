@@ -29,7 +29,7 @@ useEffect(() => {
       { data && <NasaImage photo = {data} />}
       { apiError && <h2 className="error">{apiError}</h2>}
       <div className="bottom-container">
-        <h2>Previous APOD's</h2>
+        <h2>Astronomy Photos by Date</h2>
         <Apod></Apod>
       </div>
     </div>
